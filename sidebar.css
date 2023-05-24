@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    align-items: left;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: 0.1s;
+}
+a::before {
+    content: "> ";
+}
+a:hover {
+    margin-left: 4px;
+}
+
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        align-items: center;
+    }
+
+    a {
+        padding-left: 16px;
+    }
+    a:hover {
+        margin-left: 0;
+        margin-bottom: 4px;
+    }
+    a::before {
+        content: none;
+    }
+}
