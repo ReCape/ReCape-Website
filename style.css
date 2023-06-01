@@ -159,6 +159,11 @@ p {
     margin-top: 20px;
 }
 
+#df {
+    width: 25vw;
+    padding: 8px;
+}
+
 #footer h2 {
     font-variant: normal;
 }
